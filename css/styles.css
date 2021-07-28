@@ -119,6 +119,30 @@ h3 {
   margin-bottom: 0;
 }
 
+/* about */
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.about-list {
+  margin-bottom: 50px;
+}
+
+.about-list::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #bd5d5d;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
 /* 
 works
 */
@@ -154,6 +178,19 @@ works
 }
 
 /* 
+hobby
+*/
+
+.hobby-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hobby-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+/* 
 contacts
 */
 
@@ -166,13 +203,6 @@ contacts
   display: block;
   width: 80px;
   height: 80px;
-}
-
-.about-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Анимации */
@@ -238,6 +268,11 @@ adaptive
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .hobby-list {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -285,11 +320,20 @@ adaptive
   }
 
   .contact-list__item:not(:last-child) {
-    margin-right: 18px;
+    margin-right: 24px;
   }
 
   .certificate {
     max-width: 600px;
     margin-bottom: 20px;
+  }
+  .hobby-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .hobby-list__item:not(:last-child) {
+    margin-right: 16px;
   }
 }
