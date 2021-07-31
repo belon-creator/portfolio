@@ -308,7 +308,7 @@ adaptive
     justify-content: center;
   }
 
-  .works-list__item:nth-child(-n + 3) {
+  .works-list__item:nth-child(1n) {
     margin-right: 12px;
   }
 
