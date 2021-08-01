@@ -19,7 +19,7 @@
       <header class="hdr">
         <nav class="main-nav">
           <h1 class="title">
-            <a class="link" href="/">Aleksander Belon</a>
+            <a class="link" href="#main">Aleksander Belon</a>
           </h1>
           <ul class="controls" data-controls>
             <li class="list">
@@ -39,7 +39,19 @@
       </header>
 
       <main class="panes container" data-panes>
-        <section class="pane" id="about">
+        <section class="pane pane--active" id="main">
+          <div class="banner">
+            <img
+              class="banner-img"
+              src="./img/IMG_20210801_163650_884.jpg"
+              alt="me"
+              width="95%"
+            />
+            <h2 class="banner-text">Welcome</h2>
+          </div>
+        </section>
+
+        <section class="pane pane--active" id="about">
           <h2 class="pane__title">About</h2>
           <div class="about-wrapper">
             <h3 class="pane__title">My certificate</h3>
@@ -90,7 +102,7 @@
           </div>
         </section>
 
-        <section class="pane" id="works">
+        <section class="pane pane--active" id="works">
           <h2 class="pane__title">My works</h2>
 
           <ul class="works-list list">
@@ -194,12 +206,9 @@
           </ul>
         </section>
 
-        <section class="pane" id="hobby">
+        <section class="pane pane--active" id="hobby">
           <h2 class="pane__title">My hobby</h2>
-          <p class="pane__text">
-            My hobby is shipmodeling. On average it turns out one year for one
-            ship.
-          </p>
+          <p class="pane__text">My hobby is shipmodeling.</p>
           <h3 class="pane__title">San Giovanni Batista</h3>
           <ul class="hobby-list list">
             <li class="hobby-list__item">
@@ -265,7 +274,7 @@
           </ul>
         </section>
 
-        <section class="pane" id="contacts">
+        <section class="pane pane--active" id="contacts">
           <h2 class="pane__title">Contacts</h2>
 
           <ul class="contact-list list">
@@ -363,6 +372,7 @@
       </main>
     </div>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/hdr.js" type="module"></script>
+    <!-- <script src="./js/tabs.js" type="module"></script> -->
   </body>
 </html>

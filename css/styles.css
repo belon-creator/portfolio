@@ -1,3 +1,10 @@
+:root {
+  --text-color: #afadad;
+  --bg-for-hdr: #302f2f;
+  --accent-color: #bd5d5d;
+  --bg-for-pane: #252525;
+}
+
 *,
 *::before,
 *::after {
@@ -32,7 +39,7 @@ h3 {
 
 .link {
   text-decoration: none;
-  color: #afadad;
+  color: var(--text-color);
   display: block;
 }
 
@@ -50,7 +57,7 @@ h3 {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  background-color: #302f2f;
+  background-color: var(--bg-for-hdr);
   box-shadow: -3px 30px 20px -12px rgba(7, 7, 7, 0.2);
   /* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
@@ -68,7 +75,7 @@ h3 {
 
 .title {
   font-family: Yellowtail;
-  color: #afadad;
+  color: var(--text-color);
   margin-bottom: 0;
 }
 
@@ -90,13 +97,13 @@ h3 {
 }
 
 .controls__item--active {
-  color: #bd5d5d;
+  color: var(--accent-color);
 }
 
 .pane {
   display: none;
   padding: 12px;
-  background-color: #252525;
+  background-color: var(--bg-for-pane);
   box-shadow: 0px 6px 18px 5px #000000;
   animation: fadeEffect 500ms;
 }
@@ -107,7 +114,7 @@ h3 {
 
 .pane__title,
 .pane__text {
-  color: #afadad;
+  color: var(--text-color);
 }
 
 .pane__title {
@@ -117,6 +124,30 @@ h3 {
 
 .pane__text {
   margin-bottom: 0;
+}
+
+/* banner */
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-img {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.banner-text {
+  margin: 0;
+  color: var(--accent-color);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  position: absolute;
+  transform: translateY(90%);
 }
 
 /* about */
@@ -138,7 +169,7 @@ h3 {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: #bd5d5d;
+  background-color: var(--accent-color);
   margin-top: 50px;
   border-radius: 20px;
 }
@@ -166,7 +197,7 @@ works
   padding: 10px;
   background-color: rgba(37, 37, 37, 0.8);
   border-radius: 5px;
-  color: #bd5d5d;
+  color: var(--accent-color);
   font-weight: bold;
 }
 
@@ -250,6 +281,10 @@ adaptive
     padding-top: 100px;
   }
 
+  .banner-text {
+    font-size: 40px;
+  }
+
   .works-list {
     flex-direction: column;
   }
@@ -299,6 +334,10 @@ adaptive
   .panes {
     padding-top: 70px;
     max-width: 980px;
+  }
+
+  .banner-text {
+    font-size: 120px;
   }
 
   .works-list {
