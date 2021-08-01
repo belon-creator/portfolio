@@ -1,8 +1,8 @@
 :root {
-  --text-color: #afadad;
+  --text-color: #918c8c;
   --bg-for-hdr: #302f2f;
-  --accent-color: #bd5d5d;
-  --bg-for-pane: #252525;
+  --accent-color: #ad3d3d;
+  --bg-for-pane: #332828;
 }
 
 *,
@@ -143,11 +143,13 @@ h3 {
 
 .banner-text {
   margin: 0;
-  color: var(--accent-color);
+  color: var(--text-color);
   letter-spacing: 6px;
   text-transform: uppercase;
   position: absolute;
   transform: translateY(90%);
+  opacity: 0.8;
+  text-shadow: 2px 2px 8px var(--accent-color);
 }
 
 /* about */
