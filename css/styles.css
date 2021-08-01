@@ -129,7 +129,7 @@ h3 {
 /* banner */
 
 .banner {
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,17 +139,20 @@ h3 {
   margin-right: auto;
   margin-left: auto;
   position: relative;
+  filter: brightness(50%);
 }
 
 .banner-text {
   margin: 0;
-  color: var(--text-color);
-  letter-spacing: 6px;
+  color: var(--accent-color);
+  letter-spacing: 2px;
   text-transform: uppercase;
   position: absolute;
   transform: translateY(90%);
   opacity: 0.8;
-  text-shadow: 2px 2px 8px var(--accent-color);
+  text-shadow: 2px 2px 8px var(--bg-for-hdr);
+  text-align: center;
+  font-family: Yellowtail;
 }
 
 /* about */
@@ -284,7 +287,7 @@ adaptive
   }
 
   .banner-text {
-    font-size: 40px;
+    font-size: 20px;
   }
 
   .works-list {
@@ -316,6 +319,9 @@ adaptive
   .contact-list__item:not(:last-child) {
     margin-bottom: 18px;
   }
+  .banner-text {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -339,7 +345,7 @@ adaptive
   }
 
   .banner-text {
-    font-size: 120px;
+    font-size: 40px;
   }
 
   .works-list {
