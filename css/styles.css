@@ -80,7 +80,7 @@ h3 {
 }
 
 .tabs {
-  width: 100vw;
+  /* width: 100vw; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -200,7 +200,7 @@ works
 .works-list__link {
   display: block;
   padding: 10px;
-  background-color: rgba(37, 37, 37, 0.8);
+  background-color: #252525cc;
   border-radius: 5px;
   color: var(--accent-color);
   font-weight: bold;
@@ -221,9 +221,6 @@ hobby
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.hobby-list__item:not(:last-child) {
-  margin-bottom: 16px;
 }
 
 /* 
@@ -321,6 +318,9 @@ adaptive
   }
   .banner-text {
     font-size: 20px;
+  }
+  .hobby-list__item:not(:last-child) {
+    margin-bottom: 16px;
   }
 }
 
