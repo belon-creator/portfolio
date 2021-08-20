@@ -129,7 +129,6 @@ h3 {
 /* banner */
 
 .banner {
-  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +139,6 @@ h3 {
   margin-left: auto;
   position: relative;
   filter: brightness(50%);
-  max-height: 100vh;
 }
 
 .banner-text {
