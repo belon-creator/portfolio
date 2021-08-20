@@ -140,6 +140,7 @@ h3 {
   margin-left: auto;
   position: relative;
   filter: brightness(50%);
+  max-height: 100vh;
 }
 
 .banner-text {
