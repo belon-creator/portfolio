@@ -205,6 +205,12 @@ works
   font-weight: bold;
 }
 
+.works-list__link:hover {
+  transform: scale(1.1);
+  transition: 250ms;
+  background-color: #252525;
+}
+
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -235,6 +241,11 @@ contacts
   display: block;
   width: 80px;
   height: 80px;
+}
+
+.contact-list__link:hover {
+  transform: scale(1.2);
+  transition: 250ms;
 }
 
 /* Анимации */
